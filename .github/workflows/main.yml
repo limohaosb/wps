@@ -2,7 +2,7 @@ name: WPS签到
 on:
   push:
     paths: # 指定只有哪些文件修改了才会触发该工作流程
-      - .github/workflows/main.yml
+      - .github/workflows/main.yml 
 
     
   schedule:
