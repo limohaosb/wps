@@ -4,6 +4,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    paths: # 指定只有哪些文件修改了才会触发该工作流程
+      - .github/workflows/main.yml
+
+    
   schedule:
     - cron:  '*/30 * * * *'
   workflow_dispatch:
